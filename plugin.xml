@@ -1,0 +1,27 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.ccsoft.plugin.AndroidEmail"
+        version="0.1.0">
+    <name>AndroidEmail</name>
+    <description>Cordova plugin to retrieve Google account e-mail for Android devices. We rely on Google Play Services instead of asking user android.permission.GET_ACCOUNTS</description>
+    <author>CCSoft</author>
+    <license>Apache 2.0</license>
+    <keywords>phonegap,cordova,android,accounts,email,e-mail,google play services</keywords>
+ 
+    <dependency id="com.google.playservices" />
+    <js-module src="www/AndroidEmail.js" name="AndroidEmail">
+        <merges target="CC" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+      <source-file src="src/android/AndroidEmail.java" 
+               target-dir="src/com/ccsoft/plugin" />		
+		
+  		<config-file target="res/xml/config.xml" parent="/*">
+  			<feature name="AndroidEmail">
+  				<param name="android-package" value="com.ccsoft.plugin.AndroidEmail" />
+  			</feature>		
+  		</config-file>      
+     </platform>          
+</plugin>
