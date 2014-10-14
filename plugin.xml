@@ -11,21 +11,20 @@
     <license>Apache 2.0</license>
     <keywords>phonegap,cordova,android,accounts,email,e-mail,google play services</keywords>
  
-    <dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" />
-    
     <js-module src="www/AndroidEmail.js" name="AndroidEmail">
         <merges target="CC" />
     </js-module>
  
     <!-- android -->
     <platform name="android">
-      <source-file src="src/android/AndroidEmail.java" 
+      	<source-file src="src/android/AndroidEmail.java" 
                target-dir="src/com/ccsoft/plugin" />		
 		
-  		<config-file target="res/xml/config.xml" parent="/*">
-  			<feature name="AndroidEmail">
-  				<param name="android-package" value="com.ccsoft.plugin.AndroidEmail" />
-  			</feature>		
-  		</config-file>      
+	<config-file target="res/xml/config.xml" parent="/*">
+	  <feature name="AndroidEmail">
+	  	<param name="android-package" value="com.ccsoft.plugin.AndroidEmail" />
+	  </feature>		
+	</config-file>    
+	<dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" />
      </platform>          
 </plugin>
