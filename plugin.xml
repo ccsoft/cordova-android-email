@@ -3,7 +3,7 @@
         id="com.ccsoft.plugin.AndroidEmail"
         version="0.1.0">
   <engines>
-    <engine name="cordova-android" version=">=3.0.0" />
+    <engine name="cordova-android" platform="android" version=">=3.0.0" />
   </engines>
     <name>AndroidEmail</name>
     <description>Cordova plugin to retrieve Google account e-mail for Android devices. We rely on Google Play Services instead of asking user android.permission.GET_ACCOUNTS</description>
@@ -25,6 +25,6 @@
 	  	<param name="android-package" value="com.ccsoft.plugin.AndroidEmail" />
 	  </feature>		
 	</config-file>    
-	<dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" />
+	<dependency id="com.google.playservices" />
      </platform>          
 </plugin>
