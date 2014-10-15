@@ -8,6 +8,8 @@
     <name>AndroidEmail</name>
     <description>Cordova plugin to retrieve Google account e-mail for Android devices. We rely on Google Play Services instead of asking user android.permission.GET_ACCOUNTS</description>
     <author>CCSoft</author>
+    <repo>https://github.com/ccsoft/cordova-android-email/</repo>
+    <issue>https://github.com/ccsoft/cordova-android-email/issues</issue>
     <license>Apache 2.0</license>
     <keywords>phonegap,cordova,android,accounts,email,e-mail,google play services</keywords>
  
