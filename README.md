@@ -26,9 +26,9 @@ The plugin has the following method only:
 
 ##Usage
 * [getEmail](#getEmail)
-Retrieves the email with success callback
+Retrieves the email with success callback. Error callback is called with error message when needed.
 
-*** 
+***
 
 ##Versions
 Tested with Cordova 3.6
