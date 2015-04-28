@@ -27,8 +27,17 @@ The plugin has the following method only:
 ##Usage
 * [getEmail](#getEmail)
 Retrieves the email with success callback. Error callback is called with error message when needed.
-
-***
+```
+var plugin = new CC.AndroidEmail();
+plugin.getEmail(
+  function(email) {
+  	// Use email
+  },
+  function(error) {
+  	// Handle error
+  }
+)
+```
 
 ##Versions
 Tested with Cordova 3.6
