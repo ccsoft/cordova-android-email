@@ -17,7 +17,7 @@ public class AndroidEmail extends CordovaPlugin {
 	private final String TAG = "AndroidEmail";
 	private static final int REQUEST_CODE_EMAIL = 1;
 	private CallbackContext _callbackContext = null;
-		
+	
     @Override
     public boolean execute(String action, JSONArray args,
 			final CallbackContext callbackContext) throws JSONException {
@@ -30,7 +30,7 @@ public class AndroidEmail extends CordovaPlugin {
     			public void run() {
     				try {
     	    	        Intent intent = AccountPicker.newChooseAccountIntent(null, null,
-    	    	                new String[] { GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE }, false, null, null, null, null);
+    	    	                new String[] { GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE }, true, null, null, null, null);
     	    	        cordova.getActivity().startActivityForResult(intent, REQUEST_CODE_EMAIL);
     	    	    } catch (ActivityNotFoundException e) {
     	    	       	Log.e(TAG, "Activity not found: " + e.toString() );
