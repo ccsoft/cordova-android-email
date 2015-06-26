@@ -27,6 +27,7 @@
 	  	<param name="android-package" value="com.ccsoft.plugin.AndroidEmail" />
 	  </feature>		
 	</config-file>    
-	<dependency id="com.google.playservices" />
-     </platform>          
+
+	<framework src="com.google.android.gms:play-services-identity:+" />
+    </platform>          
 </plugin>
